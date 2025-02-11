@@ -24,11 +24,9 @@ jobs:
        distribution: "temurin"
        java-version: "21"
 
-    - name: Make mvnw Executable
-      run: chmod +x mvnw
-
     - name: build jar file
       run: 
+        chmod +x mvnw
         ./mvnw clean package
 
     - name: login to docker hub
