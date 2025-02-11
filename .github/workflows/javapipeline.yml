@@ -25,7 +25,7 @@ jobs:
        java-version: "21"
 
     - name: build jar file
-      run: 
+      run: |
         chmod +x ./mvnw
         ./mvnw clean package
 
